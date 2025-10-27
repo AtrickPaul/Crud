@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crud</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="content">
-
         <form action="" id="form">
-            <h3>CRUD OPERATION <span id="sp"></span></h3>
-            <input type="text" id="i1" placeholder="enter user Id">
+            <h3>CRUD Operation<span id="sp"></span></h3>
+            <input type="text" id="i1" placeholder="enter user id">
             <br><br>
-            <input type="password" id="i2" placeholder="enter user pass">
-            <br><br>
-            <button type="submit" id="btn">Save</button>
+            <input type="password" id="i2" placeholder="enter password">
+      <br> <br>
+      <input type="radio"name="gender" value="male">Male
+      <input type="radio"name="gender" value="female">Female
+      <input type="radio"name="gender" value="trans">Trans
+      <br><br>
+      <textarea id="i3" placeholder="enter full address"></textarea>    
+      <br><br>
+      T & C <input type="checkbox" id ="chk" name="chk">
+      <br><br>
+      <button type="submit" id="btn">Save</button>
         </form>
         <table border="1" cellpadding="10" cellspacing="0">
             <thead>
                 <tr>
                     <th>UserId</th>
                     <th>Password</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>T&C </th>
                     <th>Update</th>
                     <th>Delete</th>
                 </tr>
             </thead>
-            <tbody id="tbody"></tbody>
+            <tbody id="tbody">
+
+            </tbody>
         </table>
         <h1 id="msg"></h1>
     </div>
